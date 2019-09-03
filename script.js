@@ -8,10 +8,20 @@ var myapp = new Vue({   //event Handling in vue js
     },
     methods:{
         increment: function(inc){
-this.counter = this.counter + inc;
+        this.counter = this.counter + inc;
         },
-        decrement: function(desc){
-            this.counter = this.counter - desc;
+          decrement: function(desc){
+          this.counter = this.counter - desc;
+        },
+         movefunction : function(event){
+         this.x = event.offsetX;
+         this.y = event.offsetY;
+       },
+          overfunction : function(){
+          console.log("this is message of mouse over");
+        },
+         outfunction : function(){
+         console.log("This is due to message of mouse out ")
         }
     }
 });
