@@ -1,0 +1,21 @@
+<html>
+    <head>
+<title>vue event handling</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+
+    </head>
+    <body>
+        <!-- Event handling in view js (Click and Double Click) -->
+        <div id="my-app">
+             <h3>Counter: {{ counter }}</h3>
+             <!--v-on directive for bind the event the event type -->
+             <!-- v-on short form is @ same work to v-on we can replace (v-on:click) in to (@click) -->
+             <button @click="increment(1)">Increment by 1</button>
+            <button v-on:click="decrement(1)">Decrement by 1</button>
+            <button @dblclick="increment(5)">Increment by 5</button>
+            <button v-on:dblclick="decrement(5)">Decrement by 5</button>
+           
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
