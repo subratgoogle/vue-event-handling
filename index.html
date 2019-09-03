@@ -14,7 +14,16 @@
             <button v-on:click="decrement(1)">Decrement by 1</button>
             <button @dblclick="increment(5)">Increment by 5</button>
             <button v-on:dblclick="decrement(5)">Decrement by 5</button>
-           
+            
+            
+           <div class="move-area" v-on:mousemove="movefunction" style="height:200px; width: 200px; border: 2px solid black; ">
+            <span>{{ x }}, {{ y }}</span>
+            </div>
+            <button v-on:mouseover="overfunction">MouseOver</button>
+            <button @mouseout="outfunction">MouseOut</button>
+        </div>
+        
+        
         </div>
         <script src="script.js"></script>
     </body>
