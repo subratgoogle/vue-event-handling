@@ -22,6 +22,7 @@ var myapp = new Vue({   //event Handling in vue js
         },
          outfunction : function(){
          console.log("This is due to message of mouse out ")
-        }
+        },
+        
     }
 });
