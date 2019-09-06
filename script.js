@@ -39,5 +39,19 @@ var myapp = new Vue({   //event Handling in vue js
    keydownfunction: function(event){
      console.log(event)
    },
+        
+        //thsi is button prevent, stop, event 
+        incrementby1: function(){
+this.counter++;
+    },
+    clickfunction: function(){
+      console.log("This is clicking");
+    },
+    parentclass: function(){
+      console.log("this is capture event")
+    },
+    btnClick: function(){
+      console.log("Click me again")
+    }
     }
 });
