@@ -30,6 +30,30 @@
         <br/>
         <input type="text" placeholder="key down..." @keydown="keydownfunction">
         
+          <!-- Event modifire: once, prevent, stop, capture -->
+        
+        <h3>Counter: {{ counter }}</h3>
+        <!--click.once means these button is click by only one time-->
+        <button type="button" @click.once="incrementby1">Increment 1</button>
+        <br/>
+        <!--@click.prevent means we not redirect page to google.com-->
+        <a href="https://www.google.com" @click.prevent>Google</a>
+        <br>
+        <!--@submit.prevent use for not submit form-->
+        <form action="" method="POST" @submit.prevent>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <!--@click.stop event use for stop double generate function-->
+        <div @click="clickfunction">
+            <button type="button" @click.stop="clickfunction">Click me</button>
+        </div>
+        <br/>
+<!--@click.capture use for capture before value of where use capture -->
+        <div class="parent-class" @click.capture="parentclass">
+<button type="button" @click="btnClick">Click me again</button>
+        </div>
+        
         </div>
         <script src="script.js"></script>
     </body>
