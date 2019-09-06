@@ -23,6 +23,21 @@ var myapp = new Vue({   //event Handling in vue js
          outfunction : function(){
          console.log("This is due to message of mouse out ")
         },
-        
+        //ff
+       keypressfunction: function(){  // this is for only known that is keypress event
+   console.log("subrat this is keypress event..");
+   },
+   keypressfunction: function(event){  //this is for know that which key we press
+     console.log(event)
+   },
+   keypressfunction: function(event){  //this is for know how many key we press in only key not given his details 
+     console.log(event.key);
+   },
+   keyupfunction: function(){
+    console.log("subrat this is keyup event")
+   },
+   keydownfunction: function(event){
+     console.log(event)
+   } 
     }
 });
