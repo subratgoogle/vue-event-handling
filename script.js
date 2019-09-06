@@ -38,6 +38,6 @@ var myapp = new Vue({   //event Handling in vue js
    },
    keydownfunction: function(event){
      console.log(event)
-   } 
+   },
     }
 });
