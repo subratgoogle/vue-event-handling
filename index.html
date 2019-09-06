@@ -24,6 +24,11 @@
         </div>
         
          <!-- Event handling in view js (Keypress Keyup Keydown) -->
+        <input type="text" placeholder="key press..." v-on:keypress="keypressfunction">
+           <br/>
+        <input type="text" placeholder="key up..." @keyup="keyupfunction">
+        <br/>
+        <input type="text" placeholder="key down..." @keydown="keydownfunction">
         
         </div>
         <script src="script.js"></script>
