@@ -23,7 +23,7 @@ var myapp = new Vue({   //event Handling in vue js
          outfunction : function(){
          console.log("This is due to message of mouse out ")
         },
-        //ff
+        //this is keypress event js 
        keypressfunction: function(){  // this is for only known that is keypress event
    console.log("subrat this is keypress event..");
    },
